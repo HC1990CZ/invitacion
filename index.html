@@ -1,0 +1,69 @@
+<!--
+Este documento HTML implementa una página interactiva que incluye:
+- Un video de fondo con un efecto parallax al desplazarse.
+- Contenido dividido en secciones para demostrar el diseño de una página web.
+- Funcionalidad de notificaciones estilo "toast".
+- Un botón interactivo que lanza confeti para eventos especiales.
+- Enlaces a scripts adicionales para manejar animaciones y efectos interactivos.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video de Fondo con Parallax</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Librería de confeti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <!-- Contenedor del video -->
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="video1.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+    </div>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="content">
+            <!-- Títulos principales con efectos de animación -->
+            <h1 class="text-focus-in">Mi Título con Efecto Blur</h1>
+            <h1>Bienvenido a mi sitio</h1>
+            <p>Este es un ejemplo de un video en el fondo con efecto parallax.</p>
+            <p>Desplázate para ver más contenido.</p>
+            
+            <!-- Secciones de contenido adicional -->
+            <section>
+                <h2>Sección 1</h2>
+                <p>Contenido interesante aquí...</p>
+            </section>
+            <section>
+                <h2>Sección 2</h2>
+                <p>Más contenido interesante aquí...</p>
+            </section>
+            <section>
+                <h2>Sección 3</h2>
+                <p>Y aún más contenido aquí...</p>
+            </section>
+        </section>
+
+        <!-- Botón de notificación y contenedor de toasts -->
+        <button id="notification-button" class="notification-button">📩 Haz clic para ver el mensaje</button>
+        <div id="toast-container"></div>
+        <audio id="notification-sound" src="plop.mp3"></audio>
+
+        <!-- Sección de confeti para eventos especiales -->
+        <h1>¡Daria Grace!</h1>
+        <p>Cumple #1.</p>
+        <button id="confetti-button">¡Lanzar Confeti!</button>
+    </main>
+
+    <!-- Enlaces a JavaScript para efectos y animaciones -->
+    <script src="script.js"></script>
+    <script src="confetti.js"></script>
+    <script src="toasts.js"></script>
+</body>
+</html>
